@@ -1,10 +1,10 @@
 import justpy as jp
-from docutils.nodes import container
-
+from webapp import page
 from webapp import layout
 
-class About:
+class About(page.Page):
     path = "/about"
+
     def serve(self):
         wp = jp.QuasarPage(tailwind=True)
 
